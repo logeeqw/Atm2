@@ -8,12 +8,9 @@
 "use strict";
 const PROMPT = require(`readline-sync`);
 
-let deposit, withdraw, transfer;
+document.getElementById(`withdraw`).addEventListener("click", function withdraw() {
 
-function main() {
+    PROMPT.question(`How much do you want to withdraw?  `);
 
-}
-
-main();
-
-document.getElementById(get);
+    PROMPT.question(`What is your account number?  `);
+});
