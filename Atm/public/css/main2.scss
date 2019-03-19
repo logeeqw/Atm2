@@ -11,9 +11,11 @@
     font-style: normal;
     font-display: swap;
   }
+
 .container{
   font-family: "Junction-Regular";
 }
+
   .tab {
     flex-wrap: wrap;
     justify-content: space-around;
@@ -43,7 +45,7 @@
   }
 
   .container{
-    margin:1%;
+    margin-left:1%;
   }
 
   #home{
