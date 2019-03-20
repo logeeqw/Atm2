@@ -7,10 +7,25 @@
 
 "use strict";
 const PROMPT = require(`readline-sync`);
+let balance, minus;
 
 document.getElementById(`withdraw`).addEventListener("click", function withdraw() {
 
-    PROMPT.question(`How much do you want to withdraw?  `);
+    minus = Number(PROMPT.question(`How much do you want to withdraw?  `));
 
-    PROMPT.question(`What is your account number?  `);
+    balance -+ minus;
+
+    console.log(`Your new balance is ${balance}`);
+});
+
+document.getElementById(`b&s`).addEventListener("click", function balance() {
+
+    console.log(`${balance}`)
+});
+
+document.getElementById(`transfer`).addEventListener("click", function transfer(){
+
+    PROMPT.question(`Enter the other account number you would like to transfer from/to  `);
+    
+    PROMPT.question(`How much would like to transfer  `)
 });
