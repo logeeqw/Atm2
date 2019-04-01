@@ -63,3 +63,4 @@ document.getElementById(`deposit`).addEventListener("click", function deposit() 
 
     console.log(`Your new balance is ${balance}`)
 });
+
